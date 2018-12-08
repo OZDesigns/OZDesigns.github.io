@@ -1,0 +1,46 @@
+# List of images for the site gallery. This file is in YAML format.
+# See https://yaml.org/ for a complete manual on writing in YAML.
+#
+# In brief:
+#
+# * Comments start with a `#` on their own line (like this block).
+# * Everything after the first three dashes on their own line begins
+#   the actual contents of the file.
+# * List items are denoted with a single dash (`-`). This file is just
+#   one big list. :)
+# * A list item can have multiple key-value pairs, separated by a
+#   colon. For example `key: value`.
+#
+# For example, to add an image with the filename "example_image.jpg"
+# to your gallery, and give it a caption of "Example Image" you would
+# add the following to the bottom of this file:
+#
+#   -
+#     image: example_image.jpg
+#     caption: "Example Image"
+#
+# The dash on its own line indicates a new list item. The next line
+# is indented, indicating it is part of the list item. On that line,
+# the text `image` preceeding the colon indicates that the list item
+# is a key-value pair. The key is `image` and the `image` key's value
+# is `example_image.jpg`. A list item can have as many key-value pairs
+# as you want. So, in this example, the next line is another key-value
+# pairing, with a different key (`caption`) and a different value for
+# that key (`"Example Image"`).
+#
+# Certain gallery item keys are recognized specially by your site
+# templates. See the `README.md` file in the same folder as this file
+# for more details about the specifics of each key and its meaning.
+---
+-
+  image: example_image_1.jpg
+  caption: "Example Image 1"
+-
+  image: example_image_2.jpg
+  featured: true
+-
+  image: example_image_3.jpg
+  caption: "Example Image 3"
+  featured: true
+  link: https://example.com/
+  link_title: Hello world.

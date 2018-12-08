@@ -1,0 +1,24 @@
+# Description of navigation menus used throughout the site, in YAML.
+# See https://yaml.org/ for a complete manual on writing in YAML.
+#
+# See the `README.md` file in the same folder as this file for more
+# details about the specifics of each key and its meaning.
+---
+main:
+  -
+    url: /
+    text: Home
+    image: logo.olive_webdev.transparent.1110x1370.png
+  -
+    url: /about/
+    text: About
+    title_text: Learn more about us!
+  -
+    url: /gallery/
+    text: Gallery
+  - 
+    url: /contact/
+    text: Contact
+  -
+    url: /blog/
+    text: Blog

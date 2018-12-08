@@ -1,0 +1,19 @@
+<footer id="MainFooter">
+    <p class="h-card vcard">
+        <img src="{{ "/static/images/logo.olive_webdev.white-on-black.470x534.png" | relative_url }}" alt="" class="u-photo photo" />
+        <a href="{{ site.url }}" class="p-name fn p-org org u-url url">Olive WebDev</a>,
+        <span class="adr">
+            <span class="p-street-address street-address">123 Main Street</span>,
+            <span class="p-locality locality">Queens</span>,
+            <span class="p-region region">NY</span>,
+            <span class="p-postal-code postal-code">11XXX</span>
+        </span>
+        <a href="tel:+15551234567" class="p-tel tel">(555) 123-4567</a>
+        <a href="mailto:contact@example.invalid" class="u-email email">contact@example.invalid</a>
+    </p>
+    <p>(<a href="http://suda.co.uk/projects/microformats/hcard/get-contact.php?uri={{ "/contact/" | absolute_url | cgi_escape }}">Add our contact information to your address book</a>.)</p>
+    <nav>
+    {% include site-navigation.html %}
+    </nav>
+    <p>Website by <a href="https://shiftctrl.space/">Shift-CTRL Space</a>.</p>
+</footer>
