@@ -1,0 +1,23 @@
+# Contact information to publish on the site. This should be the info
+# for you, not the technical contact for the site's operators.
+#
+# To unpublish a given contact method, remove the corresponding line
+# from this file or insert an octothorpe (`#`, i.e., a comment
+# character) at the beginning of its line.
+---
+full_name: Olive Zachowski
+
+image: logo.png
+
+street_address: "123 Main Street"
+locality: Queens
+region: NY
+postal_code: 11XXX
+
+telephone: "732-597-3154"
+email: saltyolive@riseup.net
+
+social_media:
+  facebook: https://www.facebook.com/olive.zachowski.5
+  instagram: https://instagram.com/saltyoliveee/
+  etsy: https://www.etsy.com/shop/MartiniByOlive

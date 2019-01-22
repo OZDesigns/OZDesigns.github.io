@@ -1,0 +1,13 @@
+---
+title: Home
+layout: default
+---
+
+<p>Olive Zachowski is a Queens-based handygal and interior designer with a focus on enhancing the function and livability of small spaces. She has a background in various types of mechanical and handy work, but started designing lofts in order to deal with her own small living spaces in New York City. She focuses on delivering solutions to practical problems tailored to a variety of budgets. Her skills include computer-assisted interior design, construction, solutions to common home problems, lighting installations, and mechanical repair. Olive is a woman of trans experience and strives to provide a sensitive and comfortable experience for persons of all identities in the course of her work.</p>
+
+{% assign images = site.data.gallery | where: "featured", true %}
+{% if images %}
+<ul id="gallery">{% for image in images %}
+{% include gallery-image.html image=image %}
+{% endfor %}</ul>
+{% endif %}

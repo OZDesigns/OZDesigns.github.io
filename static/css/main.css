@@ -1,3 +1,101 @@
 /**
  * Main stylesheet.
  */
+
+/**
+ * @group Layout.
+ */
+html,
+body {
+    margin: 0;
+    border: none;
+    padding: 0;
+    background: #FFF;
+}
+
+body {
+    border: 2px solid gray;
+    padding: 30px;
+}
+
+#Masthead {
+    text-align: center;
+}
+#Tagline {
+    text-transform: uppercase;
+}
+
+/**
+ * @group Main navigation.
+ */
+#MainNavigation {
+    border-top: 2px solid gray;
+    height: 2px;
+    margin-bottom: 2em;
+}
+#MainNavigation ul {
+    list-style: none;
+    display: flex;
+    margin-top: -0.5em;
+    justify-content: center;
+}
+#MainNavigation li {
+    background: #FFF;
+    padding: 0 1em;
+}
+
+#gallery {
+    list-style: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin: 0;
+    padding: 0;
+}
+#gallery li {
+    display: inline-block;
+}
+#gallery figure {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#gallery img {
+    max-width: 100%;
+}
+#gallery figcaption {
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    margin-left: -25%;
+    border-radius: 2em;
+    padding: .5em;
+    width: 50%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    white-space: normal;
+    opacity: .8;
+}
+
+#MainFooter {
+    margin: 2em 0 0;
+    border-top: 2px solid gray;
+    padding: 2em 0 0;
+    text-align: center;
+}
+
+/**
+ * @group Icons.
+ */ 
+ul.social-media {
+    margin: 0;
+    padding: 0;
+}
+ul.social-media li {
+    display: inline;
+}
+ul.social-media img {
+    max-width: 2em;
+    padding: 0 .25em;
+}

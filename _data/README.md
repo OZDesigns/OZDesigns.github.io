@@ -10,8 +10,13 @@ This folder contains [Jekyll data files](https://jekyllrb.com/docs/datafiles/), 
 ## Files in this folder
 
 * `README.md` - This help file. :)
+* [`contact.yml`](#contact-info) - Contact information to publish on various pages.
 * [`gallery.yml`](#gallery) - Description of which images to display on your site's gallery, and in what order.
 * [`nav_menus.yml`](#navigation-menus) - Description of which pages to link to from the navigation menus.
+
+## Contact info
+
+It's easy to update the contact information published on your site when it changes. To do so, edit the appropriate values in the `contact.yml` file.
 
 ## Gallery
 

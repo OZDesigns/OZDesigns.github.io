@@ -8,17 +8,21 @@ main:
   -
     url: /
     text: Home
-    image: logo.olive_webdev.transparent.1110x1370.png
   -
-    url: /about/
-    text: About
-    title_text: Learn more about us!
-  -
-    url: /gallery/
-    text: Gallery
+    url: /portfolio/
+    text: Portfolio
   - 
     url: /contact/
     text: Contact
+  -
+    url: /about/
+    text: About
+  -
+    url: /resume/
+    text: Résumé
+  -
+    url: /gallery/
+    text: Gallery
   -
     url: /blog/
     text: Blog

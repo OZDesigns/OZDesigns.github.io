@@ -1,0 +1,9 @@
+{% if site.data.contact.social_media %}
+<ul class="social-media">
+{% for item in site.data.contact.social_media %}
+    <li><a href="{{ item[1] }}"
+           class="u-url u-x-{{ item[0] }} url" 
+        ><img src="{{ 'static/images/social-media/' | append: item[0] | append: '.svg' | relative_url }}" alt="Connect on {{ item[0] | capitalize }}" /></a></li>
+{% endfor %}
+</ul><!-- .social-media -->
+{% endif %}
