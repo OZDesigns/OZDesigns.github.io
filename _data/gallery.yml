@@ -33,14 +33,22 @@
 # for more details about the specifics of each key and its meaning.
 ---
 -
-  image: example_image_1.jpg
-  caption: "Example Image 1"
--
-  image: example_image_2.jpg
+  image: wall_3_dissection.png
+  caption: "Wall dissection."
   featured: true
 -
-  image: example_image_3.jpg
-  caption: "Example Image 3"
+  image: SMALL-room-wide-01.jpg
   featured: true
-  link: https://example.com/
-  link_title: Hello world.
+  caption: Custom loft.
+-
+  image: SMALL-brown-shelf-whole-01.jpg
+  caption: Brown shelf.
+  featured: true
+-
+  image: 37145888_126375924944648_5894369974083911680_n.jpg
+  featured: true
+  caption: Lighting design.
+-
+  image: SMALL-white-shelf-03.jpg
+  featured: true
+  caption: White shelf.

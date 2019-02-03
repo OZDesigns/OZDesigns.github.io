@@ -1,10 +1,16 @@
-/**
- * Main stylesheet.
- */
+@font-face {
+    src: url("../fonts/Manjari/Manjari-Regular.otf");
+    font-family: "Manjari Regular";
+}
+@font-face {
+    src: url("../fonts/Manjari/Manjari-Thin.otf");
+    font-family: "Manjari Thin";
+}
+@font-face {
+    src: url("../fonts/Manjari/Manjari-Bold.otf");
+    font-family: "Manjari Bold";
+}
 
-/**
- * @group Layout.
- */
 html,
 body {
     margin: 0;
@@ -14,34 +20,53 @@ body {
 }
 
 body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     border: 2px solid gray;
     padding: 30px;
+    font-family: "Manjari Regular";
+}
+
+h1 {
+    font: 64px "Manjari Bold";
+    margin: 0;
 }
 
 #Masthead {
+    font-family: "Manjari Bold";
     text-align: center;
 }
 #Tagline {
+    margin: 0 0 2em 0;
+    font-family: "Manjari Regular";
     text-transform: uppercase;
 }
 
-/**
- * @group Main navigation.
- */
 #MainNavigation {
     border-top: 2px solid gray;
     height: 2px;
     margin-bottom: 2em;
+    font-family: "Manjari Thin";
 }
 #MainNavigation ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin-top: -0.5em;
+    padding: 0;
     justify-content: center;
 }
 #MainNavigation li {
     background: #FFF;
+    margin-bottom: .25em;
     padding: 0 1em;
+}
+
+#MainContent {
+    flex-grow: 1;
+    margin-top: 1em;
 }
 
 #gallery {
@@ -60,7 +85,15 @@ body {
     padding: 0;
 }
 #gallery img {
-    max-width: 100%;
+    width: 100%;
+    height: 468px;
+    object-fit: scale-down;
+    background: #000;
+}
+@media screen and (max-width: 350px) {
+    #gallery img {
+        height: 115px;
+    }
 }
 #gallery figcaption {
     position: absolute;
@@ -84,6 +117,10 @@ body {
     padding: 2em 0 0;
     text-align: center;
 }
+#MainFooter .adr,
+#MainFooter .p-tel {
+    display: none;
+}
 
 /**
  * @group Icons.
@@ -98,4 +135,20 @@ ul.social-media li {
 ul.social-media img {
     max-width: 2em;
     padding: 0 .25em;
+}
+
+.h-resume .p-contact {
+    display: grid;
+
+}
+.h-resume .p-contact > * {
+    margin: 0;
+}
+.h-resume .p-tel {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    text-align: right;
+}
+.h-resume .u-email {
+    text-align: right;
 }

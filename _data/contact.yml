@@ -7,12 +7,13 @@
 ---
 full_name: Olive Zachowski
 
-image: logo.png
+#image: logo.png
 
-street_address: "123 Main Street"
-locality: Queens
-region: NY
-postal_code: 11XXX
+adr:
+  street_address: "123 Main Street"
+  locality: Queens
+  region: NY
+  postal_code: 11XXX
 
 telephone: "732-597-3154"
 email: saltyolive@riseup.net

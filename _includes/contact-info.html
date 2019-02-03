@@ -1,0 +1,18 @@
+<div class="h-card vcard">
+    <p>
+        {% if site.data.contact.image %}<img src="{{ "/static/images/" | append: site.data.contact.image | relative_url }}" alt="" class="u-photo photo" />{% endif %}
+        <a href="{{ site.url }}" class="p-name fn p-org org u-url url">{{ site.data.contact.full_name }}</a>
+        {% if site.data.contact.adr %}
+        <span class="adr">
+            <span class="p-street-address street-address">{{ site.data.contact.adr.street_address }}</span>,
+            <span class="p-locality locality">{{ site.data.contact.adr.locality }}</span>,
+            <span class="p-region region">{{ site.data.contact.adr.region }}</span>,
+            <span class="p-postal-code postal-code">{{ site.data.contact.adr.postal_code }}</span>
+        </span>
+        {% endif %}
+        <a href="sms:+1{{ site.data.contact.telephone | replace: '(', '' | replace: ')', '' | replace: ' ', '' | replace: '-', '' | replace: '.', '' }}" class="p-tel tel">{{ site.data.contact.telephone }}</a>
+        <a href="mailto:{{ site.data.contact.email }}?subject={{ '[' | append: site.title | append: '] Email inquiry' | uri_escape }}" class="u-email email">{{ site.data.contact.email }}</a>
+    </p>
+    {% include social-media.html %}
+    <p>(<a href="http://suda.co.uk/projects/microformats/hcard/get-contact.php?uri={{ "/contact/" | absolute_url | cgi_escape }}">Add our contact information to your address book</a>.)</p>
+</div><!-- .h-card vcard -->
