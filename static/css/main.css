@@ -90,9 +90,9 @@ h1 {
     object-fit: scale-down;
     background: #000;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     #gallery img {
-        height: 115px;
+        height: 220px;
     }
 }
 #gallery figcaption {
@@ -151,4 +151,11 @@ ul.social-media img {
 }
 .h-resume .u-email {
     text-align: right;
+}
+.h-resume ol {
+    margin: 0;
+    padding: 0;
+}
+.h-resume .p-experience {
+    list-style-type: none;
 }
