@@ -8,21 +8,15 @@ main:
   -
     url: /
     text: Home
-  -
-    url: /portfolio/
-    text: Portfolio
   - 
     url: /contact/
     text: Contact
   -
-    url: /about/
-    text: About
-  -
     url: /resume/
     text: Résumé
-  -
-    url: /gallery/
-    text: Gallery
+#  -
+#    url: /gallery/
+#    text: Gallery
   -
     url: /blog/
     text: Blog
