@@ -17,13 +17,11 @@ sections:
 - type: document
   path: _data/contact.yml
   label: Contact Information
-  match: "**/*"
 - type: document
   path: _data/gallery.yml
   label: Gallery
-  match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: static/images
+public_path: "/static/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
