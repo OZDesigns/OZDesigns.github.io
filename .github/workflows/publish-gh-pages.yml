@@ -1,0 +1,17 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches:
+      - forestry-source
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: EdricChan03/action-build-deploy-ghpages@v2.2.1
+      with:
+        github_token: ${{ github.token }}
+        gh_pages_token: ${{ secrets.GH_PAGES_TOKEN }}
+        gh_pages_branch: master
