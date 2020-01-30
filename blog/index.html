@@ -1,24 +1,128 @@
----
-title: Blog
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Blog &mdash; OZ Designs</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
-{% if posts.length %}
-<ol class="posts-wrapper">{% for post in paginator.posts %}<li>
-    {% include h-entry.html entry=post excerpt_only=true %}
-</li>{% endfor %}</ol>
+    <link rel="stylesheet" href="/static/css/main.css" />
 
-<ul class="Pagination">
-    {% if paginator.previous_page %}
-    <li class="PaginationPrev">
-        <a href="{{ paginator.previous_page_path }}">Newer Posts</a>
+    <link rel="canonical" href="/blog/" />
+    <link rel="alternate" href="/blog/feed.xml" type="application/rss+xml" title="Latest 10 blog posts" />
+    
+    
+
+    <meta itemprop="name" content="Blog &mdash; OZ Designs" />
+    <meta itemprop="url" content="/blog/" />
+
+    <meta property="og:site_name" content="OZ Designs" />
+    <meta property="og:title" content="Blog &mdash; OZ Designs" />
+    <meta property="og:url" content="/blog/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Blog &mdash; OZ Designs" />
+    <meta name="twitter:url" content="/blog/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="description" content="Website." />
+</head>
+
+<body>
+    <header id="Masthead">
+    <h1>OZ Designs</h1>
+    <p id="Tagline">Queer-oriented Design-Building</p>
+    <nav id="MainNavigation" onclick="void(0);">
+        <ul>
+    
+    
+    
+    
+    
+    
+    <li class="main-nav-home ">
+        <a href="/">
+        
+            Home
+        
+        </a>
     </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="PaginationNext">
-        <a href="{{ paginator.next_page_path }}">Older Posts</a>
+    
+    
+    
+    <li class="main-nav-contact ">
+        <a href="/contact/">
+        
+            Contact
+        
+        </a>
     </li>
-    {% endif %}
+    
+    
+    
+    <li class="main-nav-résumé ">
+        <a href="/resume/">
+        
+            Résumé
+        
+        </a>
+    </li>
+    
+    
+    
+    <li class="main-nav-blog current">
+        <a href="/blog/">
+        
+            Blog
+        
+        </a>
+    </li>
+    
 </ul>
-{% else %}
+
+    </nav>
+</header>
+
+    <main id="MainContent">
+    <article id="PageWrapper">
+    
 <p>No blog posts published yet.</p>
-{% endif %}
+
+
+</article>
+
+    </main>
+    <footer id="MainFooter">
+    <div class="h-card vcard">
+    <p>
+        
+        <a href="" class="p-name fn p-org org u-url url">Olive Zachowski</a>
+        
+        <a href="sms:+17325973154" class="p-tel tel">732-597-3154</a>
+        <a href="mailto:saltyolive@riseup.net?subject=[OZ%20Designs]%20Email%20inquiry" class="u-email email">saltyolive@riseup.net</a>
+    </p>
+    
+<ul class="social-media">
+
+    <li><a href="https://www.facebook.com/olive.zachowski.5"
+           class="u-url u-x-facebook url" 
+        ><img src="/static/images/social-media/facebook.svg" alt="Connect on Facebook" /></a></li>
+
+    <li><a href="https://instagram.com/saltyoliveee/"
+           class="u-url u-x-instagram url" 
+        ><img src="/static/images/social-media/instagram.svg" alt="Connect on Instagram" /></a></li>
+
+    <li><a href="https://www.etsy.com/shop/MartiniByOlive"
+           class="u-url u-x-etsy url" 
+        ><img src="/static/images/social-media/etsy.svg" alt="Connect on Etsy" /></a></li>
+
+</ul><!-- .social-media -->
+
+
+    <p>(<a href="http://suda.co.uk/projects/microformats/hcard/get-contact.php?uri=%2Fcontact%2F">Add our contact information to your address book</a>.)</p>
+</div><!-- .h-card vcard -->
+
+</footer>
+
+</body>
+</html>
