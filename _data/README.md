@@ -12,7 +12,7 @@ This folder contains [Jekyll data files](https://jekyllrb.com/docs/datafiles/), 
 * `README.md` - This help file. :)
 * [`contact.yml`](#contact-info) - Contact information to publish on various pages.
 * [`gallery.yml`](#gallery) - Description of which images to display on your site's gallery, and in what order.
-* [`nav_menus.yml`](#navigation-menus) - Description of which pages to link to from the navigation menus.
+* [`menus.yml`](#navigation-menus) - Description of which pages to link to from the navigation menus.
 
 ## Contact info
 
@@ -34,7 +34,7 @@ Your gallery images are represented as a single YAML list. Each item in the list
 
 ## Navigation menus
 
-[The `nav_menus.yml` data file](nav_menus.yml) defines the name, order, and contents of your site's navigation menus. Each menu has a name, such as `main` or `sidebar`. Each menu is a list of links that may also be an image. At a minimum, each menu item must include a `url` and a `text` field.
+[The `menus.yml` data file](menus.yml) defines the name, order, and contents of your site's navigation menus. Each menu has a name, such as `main` or `sidebar`. Each menu is a list of links that may also be an image. At a minimum, each menu item must include a `url` and a `text` field.
 
 Optionally, menu items may also include the following fields:
 

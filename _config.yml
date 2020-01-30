@@ -13,7 +13,7 @@ tagline: Queer-oriented Design-Building
 #    Uncomment this text to supply an site description.
 #    This text will be used in feeds and other metadata
 #    throughout your site.
-human_language: "en-US" # The primary human language you write in.
+lang: "en_US" # The primary human language you write in.
 timezone: "America/New_York"
 
 # Build settings
@@ -21,6 +21,9 @@ markdown: kramdown
 exclude:
   - vendor
   - README.m
+  - .github
+  - .gitignore
+  - .nojekyll
 
 # Blog settings.
 paginate: 5    # How many posts per HTML page.
@@ -47,3 +50,6 @@ defaults:
       type: posts
     values:
       layout: post
+
+plugins:
+    - jekyll-menus
